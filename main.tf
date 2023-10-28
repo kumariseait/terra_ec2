@@ -1,3 +1,7 @@
+provider "aws" {
+      region = var.aws_region
+}
+
 resource "aws_instance" "app_server" {
 
   ami           = var.ami
